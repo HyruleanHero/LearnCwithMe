@@ -13,13 +13,14 @@ int main(int argc, char *argv[])
  printf("how many fizzes will we buzz today?\n");
  scanf("%d", &n);
   for(i; i <= n; i++)
-    if(/*mod3 op*/i % 3 == 0)
+    if(/*mod15 op*/i % 15 == 0)
+      {printf("FizzBuzz\t");}
+    else if(/*mod3 op*/i % 3 == 0)
       {printf("Fizz\t");}
-        else if(/*mod5 op*/i % 5 == 0)
-	  {printf("Buzz\t");}
-	   else if(/*mod15 op*/i % 15 == 0)
-	     {printf("FizzBuzz\t");}
-	 else/*self explanatory?*/
+    else if(/*mod5 op*/i % 5 == 0)
+      {printf("Buzz\t");}
+  
+    else/*self explanatory?*/
 	       {
 		 printf("%d\t", i);
 	       }
