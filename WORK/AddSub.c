@@ -14,7 +14,7 @@
    int AddSub, num1, num2, ans, guess;
    time_t t;
 
-   //init rgenerator and an int test to see if I can rand to 0 or 1
+   //init rngenerator and an int AddSub to see if I can rand to 0 or 1
    srand((unsigned) time(&t));
    AddSub = rand() % 2;
 
@@ -29,7 +29,7 @@
        scanf("%d", &guess);
        if(ans != guess)
 	 {
-	   printf("Incorrect answer! The correct answer was %d\n.You entered %d.", ans, guess);
+	   printf("Incorrect answer! The correct answer was %d\n.You entered %d.\n", ans, guess);
 	 }
        
        else
